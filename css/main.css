@@ -93,37 +93,56 @@ textarea {
      display: flex;
      justify-content: center;
      align-items: center;
+
    }
 
    /* Header styles */
 
    header {
-     flex-flow: row wrap;
-
+     flex-flow: column;
+     padding: 15px 0;
    }
 
    header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: aquamarine;
+    width: 60%;
+    margin: 0;
    }
+
 
    header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 50%;
+    background-color: pink;
    }
 
    header nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: aliceblue;
+    width: 100%;
    }
 
    /* Footer styles */
 
    footer {
      flex-flow: column;
+   }
+
+   footer p {
+     margin: 0;
+   }
+
+   footer .content-wrapper {
+     width: 55%;
+     margin: 50px 0;
    }
 
    footer .social-icons {
@@ -143,11 +162,20 @@ textarea {
 
 
     /*----------------- Mobile Styles - Homepage -----------------*/
-   
+   main {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+
+
    #hero-area {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: aliceblue;
+    width: 90%;
    }
 
    aside {
@@ -155,12 +183,20 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    background-color: palevioletred;
+    width: 90%;
    }
 
    .features {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 90%;
+    background-color: aqua;
+   }
+
+   .features p {
+     margin: 0;
    }
 
    .features .features-item {
@@ -173,6 +209,8 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: lightgreen;
+    width: 90%;
    }
 
    .reviews .content-wrapper {
