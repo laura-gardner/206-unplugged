@@ -96,6 +96,7 @@ textarea {
     font-family: 'Open Sans', sans-serif;
     font-size: 1em;
     text-align: left;
+    color: #e2e3ed;
   }
 
   ul, ol {
@@ -107,13 +108,16 @@ textarea {
     text-decoration: none;
   }
 
-  h2 {
+  h2, h3, h4 {
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+  }
+
+  h2 {
     font-size: 1.875em;
   }
 
   h3, h4 {
-    font-family: 'Poppins', sans-serif;
     margin: 20px 0;
     font-size: 1.125em;
   }
@@ -143,6 +147,7 @@ textarea {
    /*----------------- Base Header - Footer Styles -----------------*/
 
    header, footer {
+     background-color: #202322;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -157,18 +162,18 @@ textarea {
    }
 
    header .content-wrapper {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row wrap;
-    background-color: aquamarine;
-    margin: 0;
    }
 
    .header-divider {
-     width: 100%;
-     height: 1px;
-     margin: 10px 0 20px 0;
+      background: #3a3a3a; 
+      width: 100%;
+      height: 1px;
+      margin: 10px 0 20px 0;
    }
 
    header nav {
@@ -177,19 +182,21 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
     width: 60%;
-    background-color: pink;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
    }
 
    header nav ul {
     display: flex;
     justify-content: space-around;
-    background-color: aliceblue;
     width: 100%;
    }
 
    /* Footer styles */
 
    footer {
+     text-align: center;
      flex-direction: column;
    }
 
@@ -236,6 +243,13 @@ textarea {
      flex-flow: row wrap;
    }
 
+   .hero-area h1 {
+     font-size: 2.25em;  
+     font-family: 'Poppins', Helvetica, Arial, sans-serif;
+     font-weight: 500; 
+     line-height: 1.2; 
+   }
+
     /* Aside */
 
    aside {
@@ -243,8 +257,34 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background-color: palevioletred;
+    background-color: #527158;
    }
+
+   aside .form{
+    margin-top: 30px;
+  }
+  
+  input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+  }
+  
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
     /* Features */
 
@@ -252,7 +292,6 @@ textarea {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
-    background-color: aqua;
    }
 
    .features h2 {
@@ -272,7 +311,8 @@ textarea {
    }
 
     .features p {
-     margin: 0;
+      text-align: center; 
+      margin: 0;
    }
 
      /* Reviews */
@@ -280,12 +320,13 @@ textarea {
    .reviews {
     display: flex;
     justify-content: center;
-    background-color: lightgreen;
     flex-flow: row wrap;
+    background-color: #2a423a;
    }
 
    .reviews h2 {
      margin-bottom: 40px;
+     line-height: 1em;
    }
 
    .reviews h3 {
@@ -300,6 +341,7 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
    }
 
    .contact-section {
@@ -307,6 +349,7 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #2a423a;
    }
 
    .contact-content p {
@@ -320,6 +363,7 @@ textarea {
     justify-content: center;
     align-items: center; 
     flex-flow: row wrap;
+    background-color: #527158;
   }
   
   .faq .content-wrapper {
@@ -332,12 +376,16 @@ textarea {
   
   .faq h2 {
     margin-bottom: 40px;
+    line-height: 1em;
   }
   
   .faq-content {
     margin-bottom: 50px;
   }
 
+  .faq-content h4 {
+    line-height: 1.333em;
+  }
 
 /* ==========================================================================
    Helper classes
