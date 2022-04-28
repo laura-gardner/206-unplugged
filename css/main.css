@@ -114,7 +114,7 @@ textarea {
   }
 
   h2 {
-    font-size: 1.875em;
+    font-size: 2em;
   }
 
   h3, h4 {
@@ -141,7 +141,6 @@ textarea {
 
    .content-wrapper {
      width: 90%;
-     margin: 50px 0;
    }
 
    /*----------------- Base Header - Footer Styles -----------------*/
@@ -151,14 +150,13 @@ textarea {
      display: flex;
      justify-content: center;
      align-items: center;
-     flex-flow: row wrap;
 
    }
 
    /* Header styles */
 
    header {
-     padding: 15px 0;
+     padding: 15px 0;     
    }
 
    header figure {
@@ -174,7 +172,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row wrap;
+    flex-direction: column;
    }
 
    .header-divider {
@@ -186,8 +184,6 @@ textarea {
 
    header nav {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-flow: row wrap;
     width: 60%;
     font-size: 1.125em;
@@ -198,7 +194,14 @@ textarea {
    header nav ul {
     display: flex;
     justify-content: space-around;
+    padding: 0;
+    margin: 0;
     width: 100%;
+   }
+
+   header nav ul li {
+     padding: 0;
+     margin: 0;
    }
 
    /* Footer styles */
@@ -227,10 +230,20 @@ textarea {
     align-items: center;
    }
 
+
+
    footer .social-icons p {
+    background-color: #527158;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+   }
+
+   footer .social-icons p i {
+     font-size: 1.3125em;
    }
 
    footer .copyright {
@@ -260,6 +273,7 @@ textarea {
      font-family: 'Poppins', Helvetica, Arial, sans-serif;
      font-weight: 500; 
      line-height: 1.2; 
+     padding-left: 1em;
    }
 
     /* Aside */
@@ -272,8 +286,18 @@ textarea {
     background-color: #527158;
    }
 
+   aside .content-wrapper {
+    margin: 0;
+    padding: 1em 0;
+   }
+
+   aside h3 {
+     padding-top: 1em;
+     margin: 0;
+   }
+
    aside .form{
-    margin-top: 30px;
+    margin-top: 1em;
   }
   
   input[type=text] {
@@ -301,19 +325,27 @@ textarea {
     /* Features */
 
    .features {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
     background: url('../img/rawpixel-800820-unsplash1.jpg') center no-repeat #333;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+   .features .content-wrapper {
+      display: flex;
+      align-items: center;
+      flex-flow: column;
+      margin-bottom: 2em;
    }
 
    .features h2 {
      margin-bottom: 60px;
+     padding-left: 1em;
    }
 
    .features article {
-     width: 63%;
+     width: 50%;
      margin: 30px 0;
    }
 
@@ -321,12 +353,12 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: row wrap;
    }
 
     .features p {
       text-align: center; 
       margin: 0;
+      font-size: 1em;
    }
 
    .features i {
@@ -344,13 +376,16 @@ textarea {
    }
 
    .reviews h2 {
-     margin-bottom: 40px;
-     line-height: 1em;
+     margin: 0;
+     padding-top: 1em;
+     padding-bottom: 0.25em;
+     line-height: 1.25;
    }
 
    .reviews h3 {
+     margin: 0;
       width: 55%;
-      margin: 20px 0;
+      padding: 0.5em 0;
    }
 
    /*----------------- Mobile Styles - About -----------------*/
