@@ -396,6 +396,7 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
     background-color: #527158;
+    padding: 1.5em 0 2em 0;
    }
 
    .contact-section {
@@ -404,6 +405,7 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
     background-color: #2a423a;
+    padding-bottom: 2em;
    }
 
    .contact-content p {
@@ -412,7 +414,11 @@ textarea {
 
    /*----------------- Mobile Styles - FAQ -----------------*/
 
-   .faq {
+   .subpage {
+     font-weight: 400;
+   }
+   
+   .faqs {
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -420,8 +426,10 @@ textarea {
     background-color: #527158;
   }
   
-  .faq .content-wrapper {
-    margin: 50px 0 0 0;
+  .faqs .content-wrapper {
+    width: 90%;
+    margin: 2em 0;
+    padding-left: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
