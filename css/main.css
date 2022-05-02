@@ -284,6 +284,7 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
     background-color: #527158;
+    padding: 0 1em;
    }
 
    aside .content-wrapper {
@@ -411,6 +412,7 @@ textarea {
     flex-flow: row wrap;
     background-color: #2a423a;
     padding-bottom: 2em;
+    padding-left: 1em;
    }
 
    .contact-content {
@@ -614,7 +616,7 @@ textarea {
   aside .content-wrapper {
     margin: 3rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-flow: row wrap;
   }
 
@@ -659,7 +661,7 @@ textarea {
   }
 
   .reviews figure {
-    width: 49%;
+    width: 45%;
   }
 
   .reviews article {
