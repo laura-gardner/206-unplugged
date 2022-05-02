@@ -344,7 +344,7 @@ textarea {
      padding-left: 1em;
    }
 
-   .features article {
+   .features-items {
      width: 50%;
      margin: 30px 0;
    }
@@ -373,6 +373,11 @@ textarea {
     justify-content: center;
     flex-flow: row wrap;
     background-color: #2a423a;
+    padding-left: 1em;
+   }
+
+   .reviews figure {
+     padding-right: 1em;
    }
 
    .reviews h2 {
@@ -396,7 +401,7 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
     background-color: #527158;
-    padding: 1.5em 0 2em 0;
+    padding: 1.5em 0 2em 1em;
    }
 
    .contact-section {
@@ -408,9 +413,18 @@ textarea {
     padding-bottom: 2em;
    }
 
-   .contact-content p {
-     margin: 0;
+   .contact-content {
+     display: flex;
+     justify-content: center;
+     align-items: space-between;
    }
+
+   .contact-content div {
+     display: flex;
+     flex-direction: column;
+     padding: 0 1em;
+   }
+
 
    /*----------------- Mobile Styles - FAQ -----------------*/
 
@@ -613,38 +627,25 @@ textarea {
     margin: 0;
   }
 
+  
   /* Features */
 
-  .features {
-    width: 100%;
-  }
-
   .features .content-wrapper {
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
+    align-items: flex-start;
   }
 
-  .features h2 {
-    padding-left: 3rem;
-    margin-bottom: 20px;
-  }
-
-  .features article {
+  .features-items {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: 20%;
-    margin: 1.5em 3em;
+    align-items: center;
+    justify-content: center;
   }
 
-  .features-item-description {
-    width: 90%;
+  .features-items p {
+    width: 200px;
   }
 
   /* Reviews */
@@ -823,6 +824,17 @@ p {
 }
 
 /* Hero */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-area .content-wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .hero-area h1 {
   font-size: 3.75em; 
   width: 80%;
@@ -831,6 +843,7 @@ p {
 /* Aside */
 aside .content-wrapper {
    justify-content: space-around;
+   margin-top: 0;
 }
 
 aside .content-wrapper .form-description,
@@ -848,28 +861,58 @@ aside .content-wrapper .form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-.features h2 {
-   width: 90%;
-}
-
-.features article {
-   flex-basis: 33%;
+  align-items: flex-start;
 }
 
 .features-items {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 16%;
+  padding: 2em 3.75em;
+  margin-left: 2em;
 }
 
-/* Reviews */ 
-.reviews article div {
-   width: 42%;
+.features-items p {
+  width: 200px;
+}
+
+/* Reviews   */
+
+.reviews .content-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 2em;
+  padding-left: 3rem;
+}
+
+.reviews figure {
+  width: 45%;
+}
+
+.reviews article {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+  padding-left: 3rem;
+}
+
+.reviews article p {
+  width: 70%;
 }
 
 .reviews h2 {
-  padding-bottom: 50px;
+  text-align: left;
+  width: 85%;
+  padding-bottom: 2em;
+}
+
+.reviews h3 {
+  width: 75%;
+  margin: 0;
+  padding: 0;
 }
 
 footer h4 {
@@ -881,8 +924,21 @@ About Page
 ========================================================================== */
 .mission h2,
 .contact-section .content-wrapper h2 {
-   width: 95%;
+   width: 100%;
    font-size: 3em;
+}
+
+
+
+.mission h2 {
+  margin: 2rem 0 0 0;
+}
+
+.contact-content {
+  display: flex;  
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .contact-content h4 {
@@ -892,13 +948,21 @@ About Page
 /* ==========================================================================
 FAQ Page
 ========================================================================== */
-.faq h2 {
+
+/* .faqs {
+} */
+
+.faqs h2 {
    width: 100%;
    font-size: 3em;
 }
-.faq h4, .faq p {
+
+.faqs h4 {
+  font-size: 3em;
+}
+
+.faqs p {
   font-size: 1.125em;
-  line-height: 1em;
 }
 }
 
